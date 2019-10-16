@@ -1,4 +1,4 @@
-package com.icontainers.decorator;
+package com.canutech.decorator;
 
 public interface Robot {
     void attack();

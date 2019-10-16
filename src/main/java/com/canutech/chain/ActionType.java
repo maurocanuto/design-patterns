@@ -1,4 +1,4 @@
-package com.icontainers.chain;
+package com.canutech.chain;
 
 public enum ActionType {
     KILL, DEFEND, STEAL

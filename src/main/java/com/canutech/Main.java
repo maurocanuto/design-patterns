@@ -1,15 +1,15 @@
-package com.icontainers;
+package com.canutech;
 
-import com.icontainers.builder.Armor;
-import com.icontainers.builder.Hero;
-import com.icontainers.builder.Profession;
-import com.icontainers.builder.Weapon;
-import com.icontainers.chain.Action;
-import com.icontainers.chain.ActionType;
-import com.icontainers.chain.Commander;
-import com.icontainers.decorator.Rider;
-import com.icontainers.decorator.Robot;
-import com.icontainers.decorator.TeleporterRider;
+import com.canutech.builder.Armor;
+import com.canutech.builder.Hero;
+import com.canutech.builder.Profession;
+import com.canutech.builder.Weapon;
+import com.canutech.chain.Action;
+import com.canutech.chain.ActionType;
+import com.canutech.chain.Commander;
+import com.canutech.decorator.Rider;
+import com.canutech.decorator.Robot;
+import com.canutech.decorator.TeleporterRider;
 
 public class Main {
 

@@ -1,15 +1,15 @@
-package com.icontainers.builder;
+package com.canutech.builder;
 
 public class Hero {
 
-    private final Profession profession;
     private final String name;
-    private final Armor armor;
-    private  Weapon weapon;
+    private final Profession profession;
+    private Armor armor;
+    private Weapon weapon;
 
     private Hero(Builder builder) {
-        this.profession = builder.profession;
         this.name = builder.name;
+        this.profession = builder.profession;
         this.weapon = builder.weapon;
         this.armor = builder.armor;
     }
@@ -55,17 +55,14 @@ public class Hero {
      */
     public static class Builder {
 
-        private final Profession profession;
         private final String name;
+        private final Profession profession;
         private Armor armor;
         private Weapon weapon;
 
-        /**
-         * Constructor
-         */
         public Builder(Profession profession, String name) {
             if (profession == null || name == null) {
-                throw new IllegalArgumentException("profession and name can not be null");
+                throw new IllegalArgumentException("Profession and name can not be null");
             }
             this.profession = profession;
             this.name = name;

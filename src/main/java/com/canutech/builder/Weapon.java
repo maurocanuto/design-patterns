@@ -1,8 +1,8 @@
-package com.icontainers.builder;
+package com.canutech.builder;
 
-public enum Profession {
+public enum Weapon {
 
-    WARRIOR, THIEF, WIZARD;
+    DAGGER, SWORD, BOW;
 
     @Override
     public String toString() {

@@ -1,9 +1,9 @@
-package com.icontainers;
+package com.canutech;
 
-import com.icontainers.decorator.Rider;
-import com.icontainers.decorator.Robot;
-import com.icontainers.decorator.TeleporterRider;
-import com.icontainers.decorator.TransportationMean;
+import com.canutech.decorator.Rider;
+import com.canutech.decorator.Robot;
+import com.canutech.decorator.TeleporterRider;
+import com.canutech.decorator.TransportationMean;
 import org.junit.Test;
 
 import static org.junit.Assert.assertEquals;

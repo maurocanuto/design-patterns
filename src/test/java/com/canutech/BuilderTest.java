@@ -1,9 +1,9 @@
-package com.icontainers;
+package com.canutech;
 
-import com.icontainers.builder.Armor;
-import com.icontainers.builder.Hero;
-import com.icontainers.builder.Profession;
-import com.icontainers.builder.Weapon;
+import com.canutech.builder.Armor;
+import com.canutech.builder.Hero;
+import com.canutech.builder.Profession;
+import com.canutech.builder.Weapon;
 import org.junit.Test;
 
 import static org.junit.Assert.assertEquals;
@@ -22,7 +22,7 @@ public class BuilderTest {
     }
 
     @Test
-    public void buildHeroTest() throws Exception {
+    public void buildHeroTest() {
         final String heroName = "Sir Lancelot";
 
         final Hero hero = new Hero.Builder(Profession.WARRIOR, heroName)
@@ -31,7 +31,6 @@ public class BuilderTest {
                 .build();
 
         assertNotNull(hero);
-        assertNotNull(hero.toString());
         assertEquals(Profession.WARRIOR, hero.getProfession());
         assertEquals(heroName, hero.getName());
         assertEquals(Armor.CLOTHES, hero.getArmor());

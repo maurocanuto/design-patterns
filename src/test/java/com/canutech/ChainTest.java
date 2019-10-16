@@ -1,7 +1,7 @@
-package com.icontainers;
-import com.icontainers.chain.Action;
-import com.icontainers.chain.ActionType;
-import com.icontainers.chain.Commander;
+package com.canutech;
+import com.canutech.chain.Action;
+import com.canutech.chain.ActionType;
+import com.canutech.chain.Commander;
 import org.junit.Test;
 
 import static org.junit.Assert.assertTrue;

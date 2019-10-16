@@ -1,14 +1,14 @@
-package com.icontainers.chain;
+package com.canutech.chain;
 
-public class Lieutenant extends ActionHandler {
+public class Colonel extends ActionHandler{
 
-    public Lieutenant(ActionHandler next) {
+    public Colonel(ActionHandler next) {
         super(next);
     }
 
     @Override
     public void handleAction(Action action) {
-        if (ActionType.KILL.equals(action.getActionType())) {
+        if (ActionType.DEFEND.equals(action.getActionType())) {
             printHandling(action);
             action.setDone();
         } else {
@@ -18,6 +18,6 @@ public class Lieutenant extends ActionHandler {
 
     @Override
     public String toString() {
-        return "Lieutenant";
+        return "Colonel";
     }
 }
