@@ -1,4 +1,4 @@
-package com.canutech.chain;
+package com.canutech.chainofresponsibility;
 
 public class Commander {
 
@@ -15,4 +15,5 @@ public class Commander {
     public void sendAction(Action req) {
         chain.handleAction(req);
     }
+    
 }
