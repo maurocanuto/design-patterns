@@ -1,7 +1,8 @@
 package com.canutech;
-import com.canutech.chain.Action;
-import com.canutech.chain.ActionType;
-import com.canutech.chain.Commander;
+
+import com.canutech.chainofresponsibility.Action;
+import com.canutech.chainofresponsibility.ActionType;
+import com.canutech.chainofresponsibility.Commander;
 import org.junit.Test;
 
 import static org.junit.Assert.assertTrue;

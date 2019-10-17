@@ -1,14 +1,14 @@
-package com.canutech.chain;
+package com.canutech.chainofresponsibility;
 
-public class Colonel extends ActionHandler{
+public class Officer extends ActionHandler {
 
-    public Colonel(ActionHandler next) {
+    public Officer(ActionHandler next) {
         super(next);
     }
 
     @Override
     public void handleAction(Action action) {
-        if (ActionType.DEFEND.equals(action.getActionType())) {
+        if (ActionType.STEAL.equals(action.getActionType())) {
             printHandling(action);
             action.setDone();
         } else {
@@ -18,6 +18,6 @@ public class Colonel extends ActionHandler{
 
     @Override
     public String toString() {
-        return "Colonel";
+        return "Officer";
     }
 }

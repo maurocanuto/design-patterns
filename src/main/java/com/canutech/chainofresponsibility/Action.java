@@ -1,4 +1,4 @@
-package com.canutech.chain;
+package com.canutech.chainofresponsibility;
 
 public class Action {
 
