@@ -1,5 +1,9 @@
 package com.canutech;
 
+import com.canutech.abstractfactory.Application;
+import com.canutech.abstractfactory.GUIFactory;
+import com.canutech.abstractfactory.OSXFactory;
+import com.canutech.abstractfactory.WinFactory;
 import com.canutech.builder.Armor;
 import com.canutech.builder.Hero;
 import com.canutech.builder.Profession;
@@ -15,12 +19,13 @@ public class Main {
 
     public static void main(String[] args) {
 
-        runBuilder();
+        //runBuilder();
 
-        runDecorator();
+        //runDecorator();
 
-        runChainOfResponsibility();
+        //runChainOfResponsibility();
 
+        runAbstractFactory();
     }
 
     private static void runBuilder() {
@@ -59,6 +64,16 @@ public class Main {
         commander.sendAction(new Action(ActionType.KILL, "kill the enemy"));
         commander.sendAction(new Action(ActionType.STEAL, "steal the flag"));
         commander.sendAction(new Action(ActionType.DEFEND, "defend the zone"));
+    }
+
+    private static void runAbstractFactory() {
+        GUIFactory factory1 = new OSXFactory();
+        Application app1 = new Application(factory1);
+        app1.paint();
+
+        GUIFactory factory2 = new WinFactory();
+        Application app2 = new Application(factory2);
+        app2.paint();
     }
 
 
